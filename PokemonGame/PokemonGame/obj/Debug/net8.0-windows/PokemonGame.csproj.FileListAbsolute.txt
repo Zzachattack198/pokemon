@@ -1,0 +1,12 @@
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.Battle.resources
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.Choose_your_team.resources
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.Form1.resources
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.Move.resources
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.Properties.Resources.resources
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.Rules.resources
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.Team2.resources
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.csproj.GenerateResource.cache
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.AssemblyInfoInputs.cache
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.AssemblyInfo.cs
+C:\Users\alaco\OneDrive\Desktop\IT145 Codes\PokemonGame\PokemonGame\obj\Debug\net8.0-windows\PokemonGame.csproj.CoreCompileInputs.cache
