@@ -73,6 +73,26 @@ namespace PokemonGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button_kyogre {
+            get {
+                object obj = ResourceManager.GetObject("button_kyogre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_image_for_game {
+            get {
+                object obj = ResourceManager.GetObject("Menu image for game", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pokeball {
             get {
                 object obj = ResourceManager.GetObject("Pokeball", resourceCulture);

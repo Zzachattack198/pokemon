@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rules));
             butCloseRules = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // butCloseRules
@@ -43,20 +45,33 @@
             butCloseRules.UseVisualStyleBackColor = false;
             butCloseRules.Click += butCloseRules_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(12, 12);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(673, 500);
+            textBox1.TabIndex = 1;
+            textBox1.Text = resources.GetString("textBox1.Text");
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // Rules
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(931, 514);
+            Controls.Add(textBox1);
             Controls.Add(butCloseRules);
             Name = "Rules";
             Text = "Rules";
             Load += Rules_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button butCloseRules;
+        private TextBox textBox1;
     }
 }

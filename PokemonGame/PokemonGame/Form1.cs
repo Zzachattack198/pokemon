@@ -37,5 +37,15 @@ namespace PokemonGame
             Choose_your_team.Closed += (s, args) => this.Close();
             Choose_your_team.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             butPlay = new Button();
-            pictureBox1 = new PictureBox();
             butQuit = new Button();
             button3 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // butPlay
@@ -45,15 +44,6 @@
             butPlay.Text = "Play";
             butPlay.UseVisualStyleBackColor = true;
             butPlay.Click += butPlay_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.Location = new Point(285, 105);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(375, 90);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // butQuit
             // 
@@ -77,27 +67,39 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Showcard Gothic", 25.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(189, 60);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(582, 59);
+            textBox1.TabIndex = 4;
+            textBox1.Text = "POKEMON BATTLE GROUNDS";
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Menu_image_for_game;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(963, 536);
+            Controls.Add(textBox1);
             Controls.Add(button3);
             Controls.Add(butQuit);
-            Controls.Add(pictureBox1);
             Controls.Add(butPlay);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button butPlay;
-        private PictureBox pictureBox1;
         private Button butQuit;
         private Button button3;
+        private TextBox textBox1;
     }
 }

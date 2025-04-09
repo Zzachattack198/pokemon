@@ -120,4 +120,11 @@
   <metadata name="butCloseRules.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>                                                          Rules for this Pokémon 
+Pokémon Selection: First you will select your six Pokémon. You will only be allowed one legendary Pokémon. You will go against an AI. The AI will have 6 randomly selected Pokémon. 
+You will click on the Pokémon image to get your team. You will have to press 6 images then you will have your first team. Next, player will go to a battlefield. After this, the Pokémon battle will begin. 
+The order of Pokémon you selected will be the order you began with. The Pokémon health bar and attack/defense stats will be the same they are in the game. The moves that your Pokémon has will be set before your battle. Type advantage to disadvantage or no effect: Certain Pokémon have type advantages and disadvantages. If a Pokémon has a type of advantage that move will do 2x the damage. If a Pokémon has a disadvantage, it will do half the damage it normally does.If a Pokémon does a move that has no effect on the opposing Pokémon it will do no damage. If there is no effect the move will do 0 damage, if resistance it will do half the damage.
+Battle Rules: Once all six of your Pokémon fainted you lose. If all your opponent's Pokémon fainted, you win. A tie cannot happen while battling.</value>
+  </data>
 </root>

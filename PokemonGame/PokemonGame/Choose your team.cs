@@ -32,6 +32,9 @@ namespace PokemonGame
         public static int index5 = 0;
         public static int index6 = 0;
 
+       
+
+
         private void Choose_your_team_Load(object sender, EventArgs e)
         {
             pokemon1.BackgroundImage = defaultPokeball;
@@ -43,6 +46,13 @@ namespace PokemonGame
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
+            List<Image> pokemon = new List<Image>(6);
+            pokemon.Add(pokemon1.BackgroundImage);
+            pokemon.Add(pokemon2.BackgroundImage);
+            pokemon.Add(pokemon3.BackgroundImage);
+            pokemon.Add(pokemon4.BackgroundImage);
+            pokemon.Add(pokemon5.BackgroundImage);
+            pokemon.Add(pokemon6.BackgroundImage);
         }
 
         //quit button
@@ -94,6 +104,8 @@ namespace PokemonGame
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             pokemon2.BackgroundImage = defaultPokeball;
+
+
         }
 
         private void butVenusaur_Click(object sender, EventArgs e)
@@ -824,6 +836,12 @@ namespace PokemonGame
             {
                 pokemon6.BackgroundImage = butKyogre.BackgroundImage;
             }
+                butKyogre.Enabled = false;
+                butArticuno.Enabled = false;
+                butMewtwo.Enabled = false;
+                butZapdos.Enabled = false;
+                butGroudon.Enabled = false;
+
         }
 
         private void butArticuno_Click(object sender, EventArgs e)
@@ -852,6 +870,12 @@ namespace PokemonGame
             {
                 pokemon6.BackgroundImage = butArticuno.BackgroundImage;
             }
+
+            butKyogre.Enabled = false;
+            butArticuno.Enabled = false;
+            butMewtwo.Enabled = false;
+            butZapdos.Enabled = false;
+            butGroudon.Enabled = false;
         }
 
         private void butZapdos_Click(object sender, EventArgs e)
@@ -880,6 +904,12 @@ namespace PokemonGame
             {
                 pokemon6.BackgroundImage = butZapdos.BackgroundImage;
             }
+
+            butKyogre.Enabled = false;
+            butArticuno.Enabled = false;
+            butMewtwo.Enabled = false;
+            butZapdos.Enabled = false;
+            butGroudon.Enabled = false;
         }
 
         private void butMewtwo_Click(object sender, EventArgs e)
@@ -908,6 +938,12 @@ namespace PokemonGame
             {
                 pokemon6.BackgroundImage = butMewtwo.BackgroundImage;
             }
+
+            butKyogre.Enabled = false;
+            butArticuno.Enabled = false;
+            butMewtwo.Enabled = false;
+            butZapdos.Enabled = false;
+            butGroudon.Enabled = false;
         }
 
         private void butGroudon_Click(object sender, EventArgs e)
@@ -936,12 +972,76 @@ namespace PokemonGame
             {
                 pokemon6.BackgroundImage = butGroudon.BackgroundImage;
             }
-        }
 
-        private void pokemon1_Click(object sender, EventArgs e)
+            butKyogre.Enabled = false;
+            butArticuno.Enabled = false;
+            butMewtwo.Enabled = false;
+            butZapdos.Enabled = false;
+            butGroudon.Enabled = false;
+
+        }
+       private void checkLeg(List<Image> pokemon)
+        {
+            bool legendary = false;
+            for (int i = 0; i < pokemon.Count; i++)
+            {
+                if (pokemon[i] == butKyogre.BackgroundImage)
+                {
+                    legendary = true;
+                }
+                else if (pokemon[i] == butArticuno.BackgroundImage)
+                {
+                    legendary = true;
+                }
+                else if (pokemon[i] == butZapdos.BackgroundImage)
+                {
+                    legendary = true;
+                }
+                else if (pokemon[i] == butMewtwo.BackgroundImage)
+                {
+                    legendary = true;
+                }
+                else if (pokemon[i] == butGroudon.BackgroundImage)
+                {
+                    legendary = true;
+                }
+
+                if (legendary)
+                {
+                    butKyogre.Enabled = false;
+                    butArticuno.Enabled = false;
+                    butZapdos.Enabled = false;
+                    butMewtwo.Enabled = false;
+                    butGroudon.Enabled = false;
+                }
+                else 
+                {
+                    butKyogre.Enabled = true;
+                    butArticuno.Enabled = true;
+                    butZapdos.Enabled = true;
+                    butMewtwo.Enabled = true;
+                    butGroudon.Enabled = true;
+                }
+            }
+
+        }
+     
+        
+       private void pokemon1_Click(object sender, EventArgs e)
         {
             pokemon1.BackgroundImage = defaultPokeball;
+            if(pokemon1.BackgroundImage != butKyogre.BackgroundImage)
+            {
+                butKyogre.Enabled = true;
+                butArticuno.Enabled = true;
+                butMewtwo.Enabled = true;
+                butZapdos.Enabled = true;
+                butGroudon.Enabled = true;
+
+            }
+
         }
+
 
         private void pokemon3_Click(object sender, EventArgs e)
         {
@@ -974,11 +1074,10 @@ namespace PokemonGame
         private void butChoosePoke_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var Battle = new Battle(pokemon1.BackgroundImage, pokemon2.BackgroundImage, pokemon3.BackgroundImage, pokemon4.BackgroundImage, pokemon5.BackgroundImage, pokemon6.BackgroundImage);
+            var Battle = new Battle(pokemon1.BackgroundImage, pokemon2.BackgroundImage, pokemon3.BackgroundImage, pokemon4.BackgroundImage, pokemon5.BackgroundImage, pokemon6.BackgroundImage, butCharizard.BackgroundImage, butBlaziken.BackgroundImage, butBlastoise.BackgroundImage, butBarbaracle.BackgroundImage, butIncineroar.BackgroundImage, butAerodactyl.BackgroundImage, butArticuno.BackgroundImage, butDragapult.BackgroundImage, butDragonite.BackgroundImage, butFroslass.BackgroundImage, butGardevoir.BackgroundImage, butGengar.BackgroundImage, butGroudon.BackgroundImage, butKrookodile.BackgroundImage, butKyogre.BackgroundImage, butLucario.BackgroundImage, butMetagross.BackgroundImage, butMewtwo.BackgroundImage, butPikachu.BackgroundImage, butSceptile.BackgroundImage, butShedinja.BackgroundImage, butSteelix.BackgroundImage, butSylveon.BackgroundImage, butTalonflame.BackgroundImage, butToxapex.BackgroundImage, butToxicroak.BackgroundImage, butTyranitar.BackgroundImage, butVenusaur.BackgroundImage, butVikavolt.BackgroundImage, butZapdos.BackgroundImage);
             Battle.Closed += (s, args) => this.Close();
             Battle.Show();
         }
-
 
         //For pokemon sprites use the Gen 7 sprites as buttons to select.
 

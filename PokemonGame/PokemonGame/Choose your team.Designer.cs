@@ -196,7 +196,7 @@
             // butKyogre
             // 
             butKyogre.Anchor = AnchorStyles.Right;
-            butKyogre.BackgroundImage = (Image)resources.GetObject("butKyogre.BackgroundImage");
+            butKyogre.BackgroundImage = Properties.Resources.button_kyogre;
             butKyogre.BackgroundImageLayout = ImageLayout.Zoom;
             butKyogre.Location = new Point(156, 719);
             butKyogre.Name = "butKyogre";
