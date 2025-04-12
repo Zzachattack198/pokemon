@@ -26,6 +26,8 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        /// 
+        
         private void InitializeComponent()
         {
             team1Poke = new PictureBox();
@@ -124,7 +126,7 @@
             ((System.ComponentModel.ISupportInitialize)team2Poke).EndInit();
             ResumeLayout(false);
             PerformLayout();
-        }
+        } 
 
         #endregion
 

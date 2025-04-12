@@ -71,33 +71,27 @@ namespace PokemonGame
             if (pokemon1.BackgroundImage == defaultPokeball)
             {
                 pokemon1.BackgroundImage = butCharizard.BackgroundImage;
-                index1 = 1;
                 firstPokemonSelected(pokemon1.BackgroundImage);
             }
             else if (pokemon2.BackgroundImage == defaultPokeball)
             {
                 pokemon2.BackgroundImage = butCharizard.BackgroundImage;
-                index2 = 1;
             }
             else if (pokemon3.BackgroundImage == defaultPokeball)
             {
                 pokemon3.BackgroundImage = butCharizard.BackgroundImage;
-                index3 = 1;
             }
             else if (pokemon4.BackgroundImage == defaultPokeball)
             {
                 pokemon4.BackgroundImage = butCharizard.BackgroundImage;
-                index4 = 1;
             }
             else if (pokemon5.BackgroundImage == defaultPokeball)
             {
                 pokemon5.BackgroundImage = butCharizard.BackgroundImage;
-                index5 = 1;
             }
             else if (pokemon6.BackgroundImage == defaultPokeball)
             {
                 pokemon6.BackgroundImage = butCharizard.BackgroundImage;
-                index6 = 1;
             }
         }
 
@@ -113,32 +107,26 @@ namespace PokemonGame
             if (pokemon1.BackgroundImage == defaultPokeball)
             {
                 pokemon1.BackgroundImage = butVenusaur.BackgroundImage;
-                index1 = 2;
             }
             else if (pokemon2.BackgroundImage == defaultPokeball)
             {
                 pokemon2.BackgroundImage = butVenusaur.BackgroundImage;
-                index2 = 2;
             }
             else if (pokemon3.BackgroundImage == defaultPokeball)
             {
                 pokemon3.BackgroundImage = butVenusaur.BackgroundImage;
-                index3 = 2;
             }
             else if (pokemon4.BackgroundImage == defaultPokeball)
             {
                 pokemon4.BackgroundImage = butVenusaur.BackgroundImage;
-                index4 = 2;
             }
             else if (pokemon5.BackgroundImage == defaultPokeball)
             {
                 pokemon5.BackgroundImage = butVenusaur.BackgroundImage;
-                index5 = 2;
             }
             else if (pokemon6.BackgroundImage == defaultPokeball)
             {
                 pokemon6.BackgroundImage = butVenusaur.BackgroundImage;
-                index6 = 2;
             }
         }
 
@@ -147,32 +135,26 @@ namespace PokemonGame
             if (pokemon1.BackgroundImage == defaultPokeball)
             {
                 pokemon1.BackgroundImage = butBlastoise.BackgroundImage;
-                index1 = 3;
             }
             else if (pokemon2.BackgroundImage == defaultPokeball)
             {
                 pokemon2.BackgroundImage = butBlastoise.BackgroundImage;
-                index2 = 3;
             }
             else if (pokemon3.BackgroundImage == defaultPokeball)
             {
                 pokemon3.BackgroundImage = butBlastoise.BackgroundImage;
-                index3 = 3;
             }
             else if (pokemon4.BackgroundImage == defaultPokeball)
             {
                 pokemon4.BackgroundImage = butBlastoise.BackgroundImage;
-                index4 = 3;
             }
             else if (pokemon5.BackgroundImage == defaultPokeball)
             {
                 pokemon5.BackgroundImage = butBlastoise.BackgroundImage;
-                index5 = 3;
             }
             else if (pokemon6.BackgroundImage == defaultPokeball)
             {
                 pokemon6.BackgroundImage = butBlastoise.BackgroundImage;
-                index6 = 3;
             }
         }
 
@@ -181,32 +163,26 @@ namespace PokemonGame
             if (pokemon1.BackgroundImage == defaultPokeball)
             {
                 pokemon1.BackgroundImage = butVikavolt.BackgroundImage;
-                index1 = 4;
             }
             else if (pokemon2.BackgroundImage == defaultPokeball)
             {
                 pokemon2.BackgroundImage = butVikavolt.BackgroundImage;
-                index2 = 4;
             }
             else if (pokemon3.BackgroundImage == defaultPokeball)
             {
                 pokemon3.BackgroundImage = butVikavolt.BackgroundImage;
-                index3 = 4;
             }
             else if (pokemon4.BackgroundImage == defaultPokeball)
             {
                 pokemon4.BackgroundImage = butVikavolt.BackgroundImage;
-                index4 = 4;
             }
             else if (pokemon5.BackgroundImage == defaultPokeball)
             {
                 pokemon5.BackgroundImage = butVikavolt.BackgroundImage;
-                index5 = 4;
             }
             else if (pokemon6.BackgroundImage == defaultPokeball)
             {
                 pokemon6.BackgroundImage = butVikavolt.BackgroundImage;
-                index6 = 4;
             }
         }
 
@@ -215,32 +191,26 @@ namespace PokemonGame
             if (pokemon1.BackgroundImage == defaultPokeball)
             {
                 pokemon1.BackgroundImage = butFroslass.BackgroundImage;
-                index1 = 5;
             }
             else if (pokemon2.BackgroundImage == defaultPokeball)
             {
                 pokemon2.BackgroundImage = butFroslass.BackgroundImage;
-                index2 = 6;
             }
             else if (pokemon3.BackgroundImage == defaultPokeball)
             {
                 pokemon3.BackgroundImage = butFroslass.BackgroundImage;
-                index3 = 6;
             }
             else if (pokemon4.BackgroundImage == defaultPokeball)
             {
                 pokemon4.BackgroundImage = butFroslass.BackgroundImage;
-                index4 = 6;
             }
             else if (pokemon5.BackgroundImage == defaultPokeball)
             {
                 pokemon5.BackgroundImage = butFroslass.BackgroundImage;
-                index5 = 6;
             }
             else if (pokemon6.BackgroundImage == defaultPokeball)
             {
                 pokemon6.BackgroundImage = butFroslass.BackgroundImage;
-                index6 = 6;
             }
         }
 
@@ -249,32 +219,26 @@ namespace PokemonGame
             if (pokemon1.BackgroundImage == defaultPokeball)
             {
                 pokemon1.BackgroundImage = butToxicroak.BackgroundImage;
-                index1 = 7;
             }
             else if (pokemon2.BackgroundImage == defaultPokeball)
             {
                 pokemon2.BackgroundImage = butToxicroak.BackgroundImage;
-                index2 = 7;
             }
             else if (pokemon3.BackgroundImage == defaultPokeball)
             {
                 pokemon3.BackgroundImage = butToxicroak.BackgroundImage;
-                index3 = 7;
             }
             else if (pokemon4.BackgroundImage == defaultPokeball)
             {
                 pokemon4.BackgroundImage = butToxicroak.BackgroundImage;
-                index4 = 7;
             }
             else if (pokemon5.BackgroundImage == defaultPokeball)
             {
                 pokemon5.BackgroundImage = butToxicroak.BackgroundImage;
-                index5 = 7;
             }
             else if (pokemon6.BackgroundImage == defaultPokeball)
             {
                 pokemon6.BackgroundImage = butToxicroak.BackgroundImage;
-                index6 = 7;
             }
         }
 
