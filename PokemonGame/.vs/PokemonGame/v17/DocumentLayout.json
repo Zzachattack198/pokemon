@@ -1,0 +1,220 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\choose your team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\choose your team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\choose your team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\choose your team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\barbaracle.button.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\barbaracle.button.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\battle.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\battle.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\team2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\team2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\rules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\rules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|c:\\users\\mirza\\it-145\\github\\pokemon\\pokemongame\\pokemongame\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{551BD8B1-AB60-4E09-AC1E-E455D8301F93}|PokemonGame\\PokemonGame.csproj|solutionrelative:pokemongame\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Choose your team.cs",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Choose your team.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Choose your team.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Choose your team.cs",
+              "RelativeToolTip": "PokemonGame\\Choose your team.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwEgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T23:24:01.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Choose your team.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Choose your team.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Choose your team.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Choose your team.cs [Design]",
+              "RelativeToolTip": "PokemonGame\\Choose your team.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T23:23:57.981Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Battle.cs",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Battle.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Battle.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Battle.cs",
+              "RelativeToolTip": "PokemonGame\\Battle.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T23:09:00.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Form1.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Form1.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Form1.cs",
+              "RelativeToolTip": "PokemonGame\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T23:07:16.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Form1.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Form1.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Form1.cs [Design]",
+              "RelativeToolTip": "PokemonGame\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T23:07:07.088Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Team2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Team2.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Team2.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Team2.cs [Design]",
+              "RelativeToolTip": "PokemonGame\\Team2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T23:07:02.692Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Rules.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Rules.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Rules.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Rules.cs [Design]",
+              "RelativeToolTip": "PokemonGame\\Rules.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T23:06:59.316Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Move.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Move.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Move.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Move.cs [Design]",
+              "RelativeToolTip": "PokemonGame\\Move.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T23:06:54.914Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Battle.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Battle.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Battle.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Battle.cs [Design]",
+              "RelativeToolTip": "PokemonGame\\Battle.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T23:06:40.192Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "barbaracle.button.png",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\barbaracle.button.png",
+              "RelativeDocumentMoniker": "PokemonGame\\barbaracle.button.png",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\barbaracle.button.png",
+              "RelativeToolTip": "PokemonGame\\barbaracle.button.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-04-12T23:06:37.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Battle.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Battle.Designer.cs",
+              "RelativeDocumentMoniker": "PokemonGame\\Battle.Designer.cs",
+              "ToolTip": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\Battle.Designer.cs",
+              "RelativeToolTip": "PokemonGame\\Battle.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T22:24:58.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
