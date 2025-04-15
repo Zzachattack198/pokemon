@@ -53,7 +53,7 @@ namespace PokemonGame
             pokemon = new List<Button>(30) {butAerodactyl, butArticuno, butBarbaracle, butBlastoise, butBlaziken, butCharizard, butDragapult,
                 butDragonite, butFroslass, butGardevoir, butGengar, butGroudon, butIncineroar, butKrookodile, butKyogre, butLucario, butGarchomp, butMewtwo,
                 butPikachu, butSceptile, butShedinja, butSteelix, butSylveon, butTalonflame, butToxapex, butToxicroak, butTyranitar, butVenusaur, butVikavolt, butZapdos };
-            Selectedpokemon = new List<PictureBox>(6);
+            Selectedpokemon = new List<PictureBox>(6) { pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6 };
 
             /*
             Selectedpokemon.Add(pokemon1.BackgroundImage);
@@ -71,7 +71,6 @@ namespace PokemonGame
             foreach (Button button in pokemon)
             {
                 button.Click += pokemon_click;
-                checkLeg(Selectedpokemon);
             }
         }
 
@@ -102,7 +101,7 @@ namespace PokemonGame
                     break;
                 }
             }
-
+            checkLeg(Selectedpokemon);
         }
 
         private void checkLeg(List<PictureBox> pokemon)
@@ -188,6 +187,11 @@ namespace PokemonGame
         private void butGarchomp_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pokemon2_Click(object sender, EventArgs e)
+        {
+            pokemon2.BackgroundImage = defaultPokeball;
         }
 
         //For pokemon sprites use the Gen 7 sprites as buttons to select.

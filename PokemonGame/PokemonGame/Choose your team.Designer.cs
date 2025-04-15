@@ -482,6 +482,7 @@
             pokemon2.Size = new Size(345, 221);
             pokemon2.TabIndex = 44;
             pokemon2.TabStop = false;
+            pokemon2.Click += pokemon2_Click;
             // 
             // pokemon3
             // 
