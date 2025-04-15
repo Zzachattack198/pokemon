@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\PokemonGame.csproj",
+      "projectUniqueName": "C:\\Users\\Mirza\\Desktop\\IT-145\\Pokemon Git\\PokemonGame\\PokemonGame\\PokemonGame.csproj",
       "projectName": "PokemonGame",
-      "projectPath": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\PokemonGame.csproj",
+      "projectPath": "C:\\Users\\Mirza\\Desktop\\IT-145\\Pokemon Git\\PokemonGame\\PokemonGame\\PokemonGame.csproj",
       "packagesPath": "C:\\Users\\Mirza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mirza\\IT-145\\GitHub\\pokemon\\PokemonGame\\PokemonGame\\obj\\",
+      "outputPath": "C:\\Users\\Mirza\\Desktop\\IT-145\\Pokemon Git\\PokemonGame\\PokemonGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
