@@ -16,7 +16,9 @@ namespace PokemonGame
     {
         public static Choose_your_team instance;
         public TextBox tb1;
-        
+        private List<Button> pokemon;
+        private List<PictureBox> Selectedpokemon;
+
 
         public Choose_your_team()
         {
@@ -32,27 +34,45 @@ namespace PokemonGame
         public static int index5 = 0;
         public static int index6 = 0;
 
-       
+
 
 
         private void Choose_your_team_Load(object sender, EventArgs e)
         {
-            pokemon1.BackgroundImage = defaultPokeball;
+            /*pokemon1.BackgroundImage = defaultPokeball;
             pokemon2.BackgroundImage = defaultPokeball;
             pokemon3.BackgroundImage = defaultPokeball;
             pokemon4.BackgroundImage = defaultPokeball;
             pokemon5.BackgroundImage = defaultPokeball;
-            pokemon6.BackgroundImage = defaultPokeball;
+            pokemon6.BackgroundImage = defaultPokeball;*/
+
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
-            List<Image> pokemon = new List<Image>(6);
-            pokemon.Add(pokemon1.BackgroundImage);
-            pokemon.Add(pokemon2.BackgroundImage);
-            pokemon.Add(pokemon3.BackgroundImage);
-            pokemon.Add(pokemon4.BackgroundImage);
-            pokemon.Add(pokemon5.BackgroundImage);
-            pokemon.Add(pokemon6.BackgroundImage);
+
+            pokemon = new List<Button>(30) {butAerodactyl, butArticuno, butBarbaracle, butBlastoise, butBlaziken, butCharizard, butDragapult,
+                butDragonite, butFroslass, butGardevoir, butGengar, butGroudon, butIncineroar, butKrookodile, butKyogre, butLucario, butGarchomp, butMewtwo,
+                butPikachu, butSceptile, butShedinja, butSteelix, butSylveon, butTalonflame, butToxapex, butToxicroak, butTyranitar, butVenusaur, butVikavolt, butZapdos };
+            Selectedpokemon = new List<PictureBox>(6);
+
+            /*
+            Selectedpokemon.Add(pokemon1.BackgroundImage);
+            Selectedpokemon.Add(pokemon2.BackgroundImage);
+            Selectedpokemon.Add(pokemon3.BackgroundImage);
+            Selectedpokemon.Add(pokemon4.BackgroundImage);
+            Selectedpokemon.Add(pokemon5.BackgroundImage);
+            Selectedpokemon.Add(pokemon6.BackgroundImage);*/
+
+            for (int i = 0; i < Selectedpokemon.Count; i++)
+            {
+                Selectedpokemon[i].BackgroundImage = defaultPokeball;
+            }
+
+            foreach (Button button in pokemon)
+            {
+                button.Click += pokemon_click;
+                checkLeg(Selectedpokemon);
+            }
         }
 
         //quit button
@@ -66,906 +86,47 @@ namespace PokemonGame
 
         }
 
-        private void butCharizard_Click(object sender, EventArgs e)
+        private void pokemon_click(object sender, EventArgs e)
         {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butCharizard.BackgroundImage;
-                firstPokemonSelected(pokemon1.BackgroundImage);
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butCharizard.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butCharizard.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butCharizard.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butCharizard.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butCharizard.BackgroundImage;
-            }
-        }
+            Button button = sender as Button;
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            pokemon2.BackgroundImage = defaultPokeball;
+            if (button == null) { return; }
 
+            Image image = button.BackgroundImage;
+
+            foreach (PictureBox slot in Selectedpokemon)
+            {
+                if (slot.BackgroundImage == defaultPokeball)
+                {
+                    slot.BackgroundImage = image;
+                    break;
+                }
+            }
 
         }
 
-        private void butVenusaur_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butVenusaur.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butVenusaur.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butVenusaur.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butVenusaur.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butVenusaur.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butVenusaur.BackgroundImage;
-            }
-        }
-
-        private void butBlastoise_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butBlastoise.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butBlastoise.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butBlastoise.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butBlastoise.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butBlastoise.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butBlastoise.BackgroundImage;
-            }
-        }
-
-        private void butVikavolt_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butVikavolt.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butVikavolt.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butVikavolt.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butVikavolt.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butVikavolt.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butVikavolt.BackgroundImage;
-            }
-        }
-
-        private void butFroslass_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butFroslass.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butFroslass.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butFroslass.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butFroslass.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butFroslass.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butFroslass.BackgroundImage;
-            }
-        }
-
-        private void butToxicroak_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butToxicroak.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butToxicroak.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butToxicroak.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butToxicroak.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butToxicroak.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butToxicroak.BackgroundImage;
-            }
-        }
-
-        private void butBlaziken_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butBlaziken.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butBlaziken.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butBlaziken.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butBlaziken.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butBlaziken.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butBlaziken.BackgroundImage;
-            }
-        }
-
-        private void butSceptile_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butSceptile.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butSceptile.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butSceptile.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butSceptile.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butSceptile.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butSceptile.BackgroundImage;
-            }
-        }
-
-        private void butDragapult_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butDragapult.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butDragapult.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butDragapult.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butDragapult.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butDragapult.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butDragapult.BackgroundImage;
-            }
-        }
-
-        private void butKrookodile_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butKrookodile.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butKrookodile.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butKrookodile.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butKrookodile.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butKrookodile.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butKrookodile.BackgroundImage;
-            }
-        }
-
-        private void butSylveon_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butSylveon.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butSylveon.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butSylveon.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butSylveon.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butSylveon.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butSylveon.BackgroundImage;
-            }
-        }
-
-        private void butPikachu_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butPikachu.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butPikachu.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butPikachu.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butPikachu.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butPikachu.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butPikachu.BackgroundImage;
-            }
-        }
-
-        private void butShedinja_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butShedinja.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butShedinja.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butShedinja.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butShedinja.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butShedinja.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butShedinja.BackgroundImage;
-            }
-        }
-
-        private void butTyranitar_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butTyranitar.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butTyranitar.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butTyranitar.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butTyranitar.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butTyranitar.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butTyranitar.BackgroundImage;
-            }
-        }
-
-        private void butGardevoir_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butGardevoir.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butGardevoir.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butGardevoir.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butGardevoir.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butGardevoir.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butGardevoir.BackgroundImage;
-            }
-        }
-
-        private void butDragonite_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butDragonite.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butDragonite.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butDragonite.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butDragonite.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butDragonite.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butDragonite.BackgroundImage;
-            }
-        }
-
-        private void butIncineroar_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butIncineroar.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butIncineroar.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butIncineroar.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butIncineroar.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butIncineroar.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butIncineroar.BackgroundImage;
-            }
-        }
-
-        private void butMetagross_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butMetagross.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butMetagross.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butMetagross.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butMetagross.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butMetagross.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butMetagross.BackgroundImage;
-            }
-        }
-
-        private void butLucario_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butLucario.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butLucario.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butLucario.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butLucario.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butLucario.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butLucario.BackgroundImage;
-            }
-        }
-
-        private void butGengar_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butGengar.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butGengar.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butGengar.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butGengar.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butGengar.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butGengar.BackgroundImage;
-            }
-        }
-
-        private void butAerodactyl_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butAerodactyl.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butAerodactyl.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butAerodactyl.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butAerodactyl.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butAerodactyl.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butAerodactyl.BackgroundImage;
-            }
-        }
-
-        private void butSteelix_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butSteelix.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butSteelix.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butSteelix.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butSteelix.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butSteelix.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butSteelix.BackgroundImage;
-            }
-        }
-
-        private void butBarbaracle_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butBarbaracle.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butBarbaracle.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butBarbaracle.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butBarbaracle.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butBarbaracle.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butBarbaracle.BackgroundImage;
-            }
-        }
-
-        private void butTalonflame_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butTalonflame.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butTalonflame.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butTalonflame.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butTalonflame.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butTalonflame.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butTalonflame.BackgroundImage;
-            }
-        }
-
-        private void butToxapex_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butToxapex.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butToxapex.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butToxapex.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butToxapex.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butToxapex.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butToxapex.BackgroundImage;
-            }
-        }
-
-        private void butKyogre_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butKyogre.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butKyogre.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butKyogre.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butKyogre.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butKyogre.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butKyogre.BackgroundImage;
-            }
-                butKyogre.Enabled = false;
-                butArticuno.Enabled = false;
-                butMewtwo.Enabled = false;
-                butZapdos.Enabled = false;
-                butGroudon.Enabled = false;
-
-        }
-
-        private void butArticuno_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butArticuno.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butArticuno.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butArticuno.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butArticuno.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butArticuno.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butArticuno.BackgroundImage;
-            }
-
-            butKyogre.Enabled = false;
-            butArticuno.Enabled = false;
-            butMewtwo.Enabled = false;
-            butZapdos.Enabled = false;
-            butGroudon.Enabled = false;
-        }
-
-        private void butZapdos_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butZapdos.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butZapdos.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butZapdos.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butZapdos.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butZapdos.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butZapdos.BackgroundImage;
-            }
-
-            butKyogre.Enabled = false;
-            butArticuno.Enabled = false;
-            butMewtwo.Enabled = false;
-            butZapdos.Enabled = false;
-            butGroudon.Enabled = false;
-        }
-
-        private void butMewtwo_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butMewtwo.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butMewtwo.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butMewtwo.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butMewtwo.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butMewtwo.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butMewtwo.BackgroundImage;
-            }
-
-            butKyogre.Enabled = false;
-            butArticuno.Enabled = false;
-            butMewtwo.Enabled = false;
-            butZapdos.Enabled = false;
-            butGroudon.Enabled = false;
-        }
-
-        private void butGroudon_Click(object sender, EventArgs e)
-        {
-            if (pokemon1.BackgroundImage == defaultPokeball)
-            {
-                pokemon1.BackgroundImage = butGroudon.BackgroundImage;
-            }
-            else if (pokemon2.BackgroundImage == defaultPokeball)
-            {
-                pokemon2.BackgroundImage = butGroudon.BackgroundImage;
-            }
-            else if (pokemon3.BackgroundImage == defaultPokeball)
-            {
-                pokemon3.BackgroundImage = butGroudon.BackgroundImage;
-            }
-            else if (pokemon4.BackgroundImage == defaultPokeball)
-            {
-                pokemon4.BackgroundImage = butGroudon.BackgroundImage;
-            }
-            else if (pokemon5.BackgroundImage == defaultPokeball)
-            {
-                pokemon5.BackgroundImage = butShedinja.BackgroundImage;
-            }
-            else if (pokemon6.BackgroundImage == defaultPokeball)
-            {
-                pokemon6.BackgroundImage = butGroudon.BackgroundImage;
-            }
-
-            butKyogre.Enabled = false;
-            butArticuno.Enabled = false;
-            butMewtwo.Enabled = false;
-            butZapdos.Enabled = false;
-            butGroudon.Enabled = false;
-
-        }
-       private void checkLeg(List<Image> pokemon)
+        private void checkLeg(List<PictureBox> pokemon)
         {
             bool legendary = false;
             for (int i = 0; i < pokemon.Count; i++)
             {
-                if (pokemon[i] == butKyogre.BackgroundImage)
+                if (pokemon[i].BackgroundImage == butKyogre.BackgroundImage)
                 {
                     legendary = true;
                 }
-                else if (pokemon[i] == butArticuno.BackgroundImage)
+                else if (pokemon[i].BackgroundImage == butArticuno.BackgroundImage)
                 {
                     legendary = true;
                 }
-                else if (pokemon[i] == butZapdos.BackgroundImage)
+                else if (pokemon[i].BackgroundImage == butZapdos.BackgroundImage)
                 {
                     legendary = true;
                 }
-                else if (pokemon[i] == butMewtwo.BackgroundImage)
+                else if (pokemon[i].BackgroundImage == butMewtwo.BackgroundImage)
                 {
                     legendary = true;
                 }
-                else if (pokemon[i] == butGroudon.BackgroundImage)
+                else if (pokemon[i].BackgroundImage == butGroudon.BackgroundImage)
                 {
                     legendary = true;
                 }
@@ -978,7 +139,7 @@ namespace PokemonGame
                     butMewtwo.Enabled = false;
                     butGroudon.Enabled = false;
                 }
-                else 
+                else
                 {
                     butKyogre.Enabled = true;
                     butArticuno.Enabled = true;
@@ -987,23 +148,12 @@ namespace PokemonGame
                     butGroudon.Enabled = true;
                 }
             }
-
         }
-     
-        
-       private void pokemon1_Click(object sender, EventArgs e)
+
+
+        private void pokemon1_Click(object sender, EventArgs e)
         {
             pokemon1.BackgroundImage = defaultPokeball;
-            if(pokemon1.BackgroundImage != butKyogre.BackgroundImage)
-            {
-                butKyogre.Enabled = true;
-                butArticuno.Enabled = true;
-                butMewtwo.Enabled = true;
-                butZapdos.Enabled = true;
-                butGroudon.Enabled = true;
-
-            }
-
         }
 
 
@@ -1026,21 +176,18 @@ namespace PokemonGame
         {
             pokemon6.BackgroundImage = defaultPokeball;
         }
-        public void firstPokemonSelected(Image pokemon)
-        {
-            Image image = pokemon;
-        }
-        public static class GlobalData
-        {
-            public static Image SharedImage { get; set; }
 
-        }
         private void butChoosePoke_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var Battle = new Battle(pokemon1.BackgroundImage, pokemon2.BackgroundImage, pokemon3.BackgroundImage, pokemon4.BackgroundImage, pokemon5.BackgroundImage, pokemon6.BackgroundImage, butCharizard.BackgroundImage, butBlaziken.BackgroundImage, butBlastoise.BackgroundImage, butBarbaracle.BackgroundImage, butIncineroar.BackgroundImage, butAerodactyl.BackgroundImage, butArticuno.BackgroundImage, butDragapult.BackgroundImage, butDragonite.BackgroundImage, butFroslass.BackgroundImage, butGardevoir.BackgroundImage, butGengar.BackgroundImage, butGroudon.BackgroundImage, butKrookodile.BackgroundImage, butKyogre.BackgroundImage, butLucario.BackgroundImage, butMetagross.BackgroundImage, butMewtwo.BackgroundImage, butPikachu.BackgroundImage, butSceptile.BackgroundImage, butShedinja.BackgroundImage, butSteelix.BackgroundImage, butSylveon.BackgroundImage, butTalonflame.BackgroundImage, butToxapex.BackgroundImage, butToxicroak.BackgroundImage, butTyranitar.BackgroundImage, butVenusaur.BackgroundImage, butVikavolt.BackgroundImage, butZapdos.BackgroundImage);
+            var Battle = new Battle(pokemon1.BackgroundImage, pokemon2.BackgroundImage, pokemon3.BackgroundImage, pokemon4.BackgroundImage, pokemon5.BackgroundImage, pokemon6.BackgroundImage, butCharizard.BackgroundImage, butBlaziken.BackgroundImage, butBlastoise.BackgroundImage, butBarbaracle.BackgroundImage, butIncineroar.BackgroundImage, butAerodactyl.BackgroundImage, butArticuno.BackgroundImage, butDragapult.BackgroundImage, butDragonite.BackgroundImage, butFroslass.BackgroundImage, butGardevoir.BackgroundImage, butGengar.BackgroundImage, butGroudon.BackgroundImage, butKrookodile.BackgroundImage, butKyogre.BackgroundImage, butLucario.BackgroundImage, butGarchomp.BackgroundImage, butMewtwo.BackgroundImage, butPikachu.BackgroundImage, butSceptile.BackgroundImage, butShedinja.BackgroundImage, butSteelix.BackgroundImage, butSylveon.BackgroundImage, butTalonflame.BackgroundImage, butToxapex.BackgroundImage, butToxicroak.BackgroundImage, butTyranitar.BackgroundImage, butVenusaur.BackgroundImage, butVikavolt.BackgroundImage, butZapdos.BackgroundImage);
             Battle.Closed += (s, args) => this.Close();
             Battle.Show();
+        }
+
+        private void butGarchomp_Click(object sender, EventArgs e)
+        {
+
         }
 
         //For pokemon sprites use the Gen 7 sprites as buttons to select.
